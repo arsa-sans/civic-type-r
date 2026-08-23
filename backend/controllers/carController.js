@@ -1,9 +1,5 @@
 const cars = require('../data/cars.json');
 
-/**
- * Get all cars
- * GET /api/cars
- */
 const getAllCars = (req, res) => {
   try {
     const simplifiedCars = cars.map(({ id, name, year, tagline, price, power, acceleration, topSpeed, gallery, color, badge, category }) => ({
